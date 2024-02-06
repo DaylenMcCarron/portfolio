@@ -1,7 +1,21 @@
+import Footer from "./footer/Footer";
+import Header from "./header/Header";
+import AboutMe from "./home/AboutMe";
+import Display from "./home/Display";
+import Projects from "./skills/Projects";
+import Skills from "./skills/Skills";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <Header />
+      <Display />
+      <AboutMe />
+      <Skills />
+      <Projects />
+      <Footer />
+
+    
+    </>
   )
 }
