@@ -178,9 +178,9 @@ const Display = (props: Props) => {
 
     </div>
     <div>
-      <h1 className=' text-center text-6xl protest-strike-regular text-white  border-y-2 py-1 shadow-sm shadow-white
+      <h1 className=' text-center text-6xl text-sky-200 sixtyfour border-y-2 py-2 shadow-sm shadow-white
          bg-gradient-to-r from-slate-950 from-10% via-sky-950 via-30% to-slate-950 to-90%        
-      '>DAYLEN MCCARRON</h1>
+      '>Daylen McCarron</h1>
       <div className='bg-black h-1 '></div>
     </div>
   </>
