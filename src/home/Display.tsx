@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import { BoxesCore } from '../ui/background-boxes';
+import { SparklesCore } from '../ui/sparkles';
 
 interface Person {
   [index:string]: string
@@ -35,7 +37,10 @@ const Display = (props: Props) => {
     // Conditional rendering based on arrowPos
     return (
       <>
-        {arrowPos === 5 && (
+      
+      <BoxesCore />
+      <SparklesCore />
+        {/* {arrowPos === 5 && (
           <div className='w-1/2 h-1/2 absolute left-1/4 bottom-[9vh] flex align-bottom justify-center'>
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEX///8AAAC3t7fLy8vIyMi6urq1tbW8vLyysrI+Pj7g4ODMzMzm5ubj4+Pv7+9eXl40NDRWVlampqb5+fmFhYVvb28nJycvLy+Li4tpaWk7OztjY2N/f3/z8/MbGxvW1taamppMTEzLYhRGAAACgElEQVR4nO3d21JaQRBG4Y0aw0FQRIgmMcL7v2RMNCkRmBxqprpm9fquvei/pmf3sKGcYZAkSZIkSZIkSZIkSf9nMb6e3EyWt/PoQhpZ3Y1+WS+ii2lhuhm9MYsup77paN9ZdEG1rT69Szj6GF1SZffvA9JWcXUYEBbx7FjC0Yfosip6OJqQtBcnxxOCGvXgSYqL+PlUQkyjfjmZkLKK49MJIREfCwkhEb+WIiL24uM3/Co+lRIyIl4UIyIOcOf8iOVVTNCoiIjlRkUMjXJExComaNQEERPsxQSrmD4i4nTjAS66vBoSREwwNDzARZdXQ4KIDo3o8mpIH9Gh0Yf0jYqI6AEuurwaEjRqgoge4KLLqyFBRIdGdHk1JGjUBBEdGtHl1ZA+IqJRHRrR5dVQjngZXV4N6Q9wiFVM0KgJHjezYsT9uTjfLou/Qe7Sm0a9WkcX08bl3y12z14btbxh+3bxs0Wjq2jq6jkhdA++enh+ikbX0Nh82EaX0Nh22EWX0Nhu2Pz5j7q2GaIraC7BGu6iS2hsl+BZyp+H/DNNgnMp/7NFgs+HCT7jJ3hP06t/edfWJfz7Uvw7b/z3FvjvnvAtin/I4L/Hx/8WA9+i+ID437XhVxAfED8mkh/VACuID+iY6B0+oGOid/gWxQfE70H8/1TAtyg+oEe13uED4seER7Xe4QMmHxP4gIAWxQd0TPQOH9CjWu/wLYoP6FGtd/j7nvh3duHvXePfnce//5B/hyX/HlL+XbL8+4D5dzrz7+Xm360+3NMDDquDpyloD76Yslfwh+neP3iYRZfTwurud771IrqYRhbj68nNZHk7jy5EkiRJkiRJkiRJkqQA3wFABCtCO91OvAAAAABJRU5ErkJggg=="
@@ -77,7 +82,7 @@ const Display = (props: Props) => {
         )}
         {arrowPos === 0 && (<></>
           // Add your logic for arrowPos === 5 here
-        )}
+        )} */}
       </>
     );
   
@@ -88,16 +93,16 @@ const Display = (props: Props) => {
       let posx = e.pageX / 15;
       let posy = e.pageY / 15;
   
-      let newArrowPos = 0;
-      if(posy <  screen.height / 15) {
-      if (posx > screen.width * 2 / 60) {
-        newArrowPos = posy > screen.height / 30 ? 5 : 4;
-      } else if (posx < screen.width * 2 / 60 && posx > screen.width / 60) {
-        newArrowPos = posy > screen.height / 30 ? 0 : 3;
-      } else if (posx < screen.width * 1 / 60) {
-        newArrowPos = posy > screen.height / 30 ? 1 : 2;
-      }}
-      setArrowPos(newArrowPos);
+      // let newArrowPos = 0;
+      // if(posy <  screen.height / 15) {
+      // if (posx > screen.width * 2 / 60) {
+      //   newArrowPos = posy > screen.height / 30 ? 5 : 4;
+      // } else if (posx < screen.width * 2 / 60 && posx > screen.width / 60) {
+      //   newArrowPos = posy > screen.height / 30 ? 0 : 3;
+      // } else if (posx < screen.width * 1 / 60) {
+      //   newArrowPos = posy > screen.height / 30 ? 1 : 2;
+      // }}
+      // setArrowPos(newArrowPos);
 
       
     // layer 1
@@ -130,7 +135,7 @@ const Display = (props: Props) => {
 
   return (
     <>
-    <div className=' h-[90vh] w-screen text-cyan-50 '>
+    <div className=' h-[100vh] w-screen text-cyan-50 '>
       <div className=' w-[100vw] h-[100vh] absolute' id="demo">
         <div id='js_icon' className={` w-16 h-16  absolute top-[100px] rounded-md shadow-2xl hover:shadow-yellow-400 shadow-yellow-700 hover:scale-110 transition`}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#FFD43B" d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM180.9 444.9c-33.7 0-53.2-17.4-63.2-38.5L152 385.7c6.6 11.7 12.6 21.6 27.1 21.6c13.8 0 22.6-5.4 22.6-26.5V237.7h42.1V381.4c0 43.6-25.6 63.5-62.9 63.5zm85.8-43L301 382.1c9 14.7 20.8 25.6 41.5 25.6c17.4 0 28.6-8.7 28.6-20.8c0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5c0-31.6 24.1-55.6 61.6-55.6c26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18c-12.3 0-20.1 7.8-20.1 18c0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2c0 37.8-29.8 58.6-69.7 58.6c-39.1 0-64.4-18.6-76.7-43z"/></svg>  
@@ -178,10 +183,15 @@ const Display = (props: Props) => {
 
     </div>
     <div>
-      <h1 className=' text-center text-6xl text-sky-200 sixtyfour border-y-2 py-2 shadow-sm shadow-white
-         bg-gradient-to-r from-slate-950 from-10% via-sky-950 via-30% to-slate-950 to-90%        
+      <h1 className=' w-full -z-10 absolute bottom-0 md:text-7xl text-3xl lg:text-8xl font-bold text-center text-sky-50
       '>Daylen McCarron</h1>
-      <div className='bg-black h-1 '></div>
+      <div className="w-[70rem] h-0 relative left-[30rem] -z-20">
+        {/* Gradients */}
+        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+ </div>
     </div>
   </>
   )
