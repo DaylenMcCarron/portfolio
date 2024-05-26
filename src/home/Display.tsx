@@ -2,16 +2,15 @@ import { useEffect, useState } from 'react'
 import { BoxesCore } from '../ui/background-boxes';
 import { SparklesCore } from '../ui/sparkles';
 
-interface Person {
-  [index:string]: string
+// interface Person {
+//   [index:string]: string
 
-}
+// }
 
-type Props = {}
 
-const Display = (props: Props) => {
-  let posx = 0;
-  let posy = 0;
+const Display = () => {
+  // let posx = 0;
+  // let posy = 0;
   
   const[arrowPos,setArrowPos] = useState(0);
 

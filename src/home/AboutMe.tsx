@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-const AboutMe = (props: Props) => {
+const AboutMe = () => {
   return (<>
     <div className='w-screen h-[80vh] bg-[#ffffff09]'>
       <div className='flex  w-[100%] h-[100%] '>

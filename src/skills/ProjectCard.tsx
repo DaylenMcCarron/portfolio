@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-const ProjectCard = (props: Props) => {
+const ProjectCard = () => {
   return (
     <div className='h-[80%] w-[30vw] border-[1px] border-slate-400 rounded-3xl glassbg shadow-2xl shadow-slate-900' >
       <div className='w-[95%] h-[45%] bg-black m-auto mt-3 rounded-t-3xl'></div>

@@ -1,18 +1,17 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
 import { cn } from "./utils/cn";
 
 export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
   const rows = new Array(50).fill(1);
   const cols = new Array(50).fill(1);
-  let colors = [
-    "--sky-300",
-    "--slate-300",
-  ];
-  const getRandomColor = () => {
-    return colors[Math.floor(Math.random() * colors.length)];
-  };
+  // let colors = [
+  //   "--sky-300",
+  //   "--slate-300",
+  // ];
+  // const getRandomColor = () => {
+  //   return colors[Math.floor(Math.random() * colors.length)];
+  // };
 
   return (
     <div
