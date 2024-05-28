@@ -16,7 +16,7 @@ const AboutMe = () => {
         <div className=' bg-slate-600 w-[1px]'></div>
         <div className=' basis-1/3 '>
           <div className='group relative mx-24  h-[40%] my-12 border-[1px]'>
-            <img className=' h-full w-full object-cover' src="https://media.licdn.com/dms/image/C4D03AQHjhLez70VHoA/profile-displayphoto-shrink_400_400/0/1516891104354?e=2147483647&v=beta&t=Q3nJla_bOxXYWt5QPViPe1iYVID-Va-tq-antHRyGBQ" alt="" />
+            <img className=' h-full w-full object-cover' src="./src/assets/nasa.jpeg" alt="" />
             <div className='absolute top-0 right-0 opacity-0 hover:opacity-40 bg-black w-full h-full'></div>
             <h1 className='absolute invisible group-hover:visible bottom-1 left-2 text-white'>Hackathon 1</h1>
           </div>

@@ -1,3 +1,4 @@
+import Resume from "./Resume/Resume";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import AboutMe from "./home/AboutMe";
@@ -16,6 +17,7 @@ export default function App() {
       <AboutMe />
       <Skills />
       <Projects />
+      <Resume />
     </TracingBeam>
       <Footer />
     

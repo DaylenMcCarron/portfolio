@@ -179,11 +179,14 @@ const Display = () => {
       
       
       <Image />
+      <div className='absolute top-[50%] w-full h-2'>
+        <p className='text-white text-center border-white border-2 w-[30%] mx-auto p-10'>Under Development</p>
+      </div>
 
     </div>
     <div>
       <h1 className=' w-full -z-10 absolute bottom-0 md:text-7xl text-3xl lg:text-8xl font-bold text-center text-sky-50
-      '>Daylen McCarron</h1>
+      ' id='AboutMe'>Daylen McCarron</h1>
       <div className="w-[70rem] h-0 relative left-[30rem] -z-20">
         {/* Gradients */}
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
