@@ -26,7 +26,7 @@ useEffect(() => {
   return (
     <div className='h-[80%] w-[50vw] border-[1px] mx-auto m-20 border-slate-400 rounded-3xl glassbg shadow-2xl shadow-slate-900' >
       <div className='w-[98%] h-[80%]  m-auto mt-3 rounded-t-2xl'>
-        <img src={`./src/assets/aaad${picNum}.png`} className=" object-contain w-full h-full bg-black m-auto mt-3 rounded-2xl border-slate-500 border-[1px]" alt="" />
+        <img src={`/public/assets/aaad${picNum}.png`} className=" object-contain w-full h-full bg-black m-auto mt-3 rounded-2xl border-slate-500 border-[1px]" alt="" />
       </div>
       <div>
         <h2 className="text-white mx-6 my-1 font-bold text-xl">An-Apple-A-Day - (Hackathon project)</h2>
