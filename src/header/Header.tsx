@@ -17,11 +17,11 @@ const Header = () => {
         <h1 className=" text-slate-300">PORTFOLIO</h1>
       </div>
       <ul className=" max-w-7x1 flex items-baseline justify-end space-x-16 mr-16 p-6">
-        <li className=" hover:text-slate-500 transition-colors duration-200" onClick={()=>doScroll('#AboutMe')}>About Me</li>
-        <li className=" hover:text-slate-500 transition-colors duration-200" onClick={()=>doScroll('#Skills')}>Skills</li>
-        <li className=" hover:text-slate-500 transition-colors duration-200" onClick={()=>doScroll('#Projects')}>Projects</li>
-        <li className=" hover:text-slate-500 transition-colors duration-200" onClick={()=>doScroll('#Resume')}>Resume</li>
-        <li className=" hover:text-slate-500 transition-colors duration-200" onClick={()=>doScroll('#Contact')}>Contact</li>
+        <li className=" hover:text-slate-500 transition-colors duration-200 cursor-pointer" onClick={()=>doScroll('#AboutMe')}>About Me</li>
+        <li className=" hover:text-slate-500 transition-colors duration-200 cursor-pointer" onClick={()=>doScroll('#Skills')}>Skills</li>
+        <li className=" hover:text-slate-500 transition-colors duration-200 cursor-pointer" onClick={()=>doScroll('#Projects')}>Projects</li>
+        <li className=" hover:text-slate-500 transition-colors duration-200 cursor-pointer" onClick={()=>doScroll('#Resume')}>Resume</li>
+        <li className=" hover:text-slate-500 transition-colors duration-200 cursor-pointer" onClick={()=>doScroll('#Contact')}>Contact</li>
       </ul>
     </div>
   )
