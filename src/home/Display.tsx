@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { BoxesCore } from '../ui/background-boxes';
 import { SparklesCore } from '../ui/sparkles';
+import { isMobile } from 'react-device-detect';
 
 // interface Person {
 //   [index:string]: string
@@ -17,6 +18,7 @@ const Display = () => {
 
   const Image = () => {
     useEffect(() => {
+
       // Your logic based on arrowPos value
       if (arrowPos === 0) {
         console.log("Arrow: " + arrowPos);
@@ -88,6 +90,10 @@ const Display = () => {
   }
  
   useEffect(() => {
+    
+    if(!isMobile)
+    {
+    
     const handleMouseMove = (e: { pageX: number; pageY: number }) => {
       let posx = e.pageX / 15;
       let posy = e.pageY / 15;
@@ -127,7 +133,7 @@ const Display = () => {
     // Cleanup the event listener when the component is unmounted
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
-    };
+    };}
   }, [setArrowPos]);
 
   

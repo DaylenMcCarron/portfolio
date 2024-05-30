@@ -2,11 +2,11 @@
 
 const AboutMe = () => {
   return (<>
-    <div className='w-screen h-[80vh] bg-[#ffffff09]'>
-      <div className='flex  w-[100%] h-[100%] '>
+    <div className='w-screen h-fit bg-[#ffffff09]'>
+      <div className='md:flex  w-[100%] h-[100%] '>
         
         <div className=' basis-2/3'>
-          <div className='mx-24 h-[60%] my-24'>
+          <div className='md:mx-24 mx-6 h-[60%] my-24'>
             <h1 className=' text-3xl p-6 pt-1 font-semibold text-sky-50'>About Me:</h1>
             <p className=' text-lg pt-3 text-sky-50'>
             I recently completed my BCA and am now eager to start my professional journey. My passion for programming began with game creation, using no-code engines like Stencyl and then progressing to Unity, which sparked my interest in coding.

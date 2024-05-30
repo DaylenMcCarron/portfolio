@@ -35,7 +35,7 @@ useEffect(() => {
   
   
   return (
-    <div className='h-fit w-[50vw] border-[1px] mx-auto m-20 border-slate-400 rounded-3xl glassbg shadow-2xl shadow-slate-900 hover:shadow-slate-600 duration-200' >
+    <div className='h-fit md:w-[50vw] w-[90%] border-[1px] mx-auto m-20 border-slate-400 rounded-3xl glassbg shadow-2xl shadow-slate-900 hover:shadow-slate-600 duration-200' >
       <div className='w-[98%] h-[80%]  m-auto mt-3 rounded-t-2xl'>
         <img src={`/assets/${projectData.imageName}${picNum}.png`} className=" object-contain w-full h-full bg-black m-auto mt-3 rounded-2xl border-slate-500 border-[1px]" alt="" />
       </div>
@@ -43,7 +43,7 @@ useEffect(() => {
         <h2 className="text-white mx-6 my-1 font-bold text-xl">{projectData.name}</h2>
         <p className="text-white mx-6 font-light">{projectData.description}</p>
         <h2 className="text-white mx-8 text-md my-3">{projectData.technology}</h2>
-        <a href={projectData.link} target="_blank" className=" text-sky-200 ml-4 font-bold bg-[#ffffff22] border-white border-[1px] rounded-b-2xl p-3 right-[30%] absolute ">Open Project</a>
+        <a href={projectData.link} target="_blank" className=" text-sky-200 ml-4 font-bold bg-[#ffffff22] border-white border-[1px] rounded-b-2xl p-3 md:right-[30%] absolute ">Open Project</a>
       </div>
     </div>
   )

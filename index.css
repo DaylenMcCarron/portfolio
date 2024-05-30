@@ -18,4 +18,31 @@
         background: linear-gradient(326deg, rgba(238,238,238,0.0446463585434174) 13%, rgba(255,255,255,0.14711134453781514) 25%, rgba(255,255,255,0.1075035014005602) 35%, rgba(255,255,255,0.03226540616246496) 40%, rgba(255,255,255,0.1026855742296919) 68%, rgba(255,255,255,0.14171393557422969) 72%, rgba(255,255,255,0.0948109243697474) 77%, rgba(255,255,255,0.3011729691876751) 99%);
     }
 
+    .loading {
+        -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+        animation: sk-scaleout 1s infinite ease-in-out;
+        background-color: rgb(146, 146, 255);
+        border-radius: 100%;
+        height: 6em;
+        width: 6em;
+    }  
+    .container {
+        align-items: center;
+        background-color : rgb(13, 6, 65);
+        display: flex;
+        height: 100vh;
+        justify-content:center;
+        width: 100vw;
+    }
+    @keyframes sk-scaleout {
+        0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        }
+        100% {
+        -webkit-transform: scale(1);
+        opacity: 0.5;
+        transform: scale(1);
+        }
+    }
 }
